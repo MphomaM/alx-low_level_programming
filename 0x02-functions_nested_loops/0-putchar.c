@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
- * main - Entry point
+ * main - prints _putchar, folloed by a new line
  *
- * Return: nothing, return void
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -18,4 +19,3 @@ _putchar('\n');
 
 return (0);
 }
-
