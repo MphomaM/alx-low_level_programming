@@ -7,6 +7,8 @@
  */
 void print_times_table(int n)
 {
+print_times_table(n);
+
 int i;
 int j;
 int k;
