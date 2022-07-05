@@ -6,9 +6,9 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-int mai(void)
+int main(void)
 {
-unsigned long in i, j, k, j1, j2, k1, k2;
+unsigned long int i, j, k, j1, j2, k1, k2;
 
 j = 1;
 k = 2;
