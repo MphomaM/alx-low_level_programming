@@ -3,8 +3,7 @@
 /**
  * main - Finds and prints thelargest prime
  * factor of the number 612852475143.
- *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
