@@ -13,8 +13,8 @@ int k;
 
 for (k = 0; k < n; k++)
 {
-if (k == 9)
-printf("%d, a[k]);
+if (k == 0)
+printf("%d", a[k]);
 else
 printf(", %d", a[k]);
 }
