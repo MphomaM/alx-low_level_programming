@@ -3,7 +3,7 @@
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
- * 
+ *
  * Return: the int converted from the string
  */
 int _atoi(char *s)
@@ -25,7 +25,7 @@ while (j < len && l == 0)
 if (s[j] == '-')
 k++;
 
-if (s[j] >='0' && s[j] <= '9')
+if (s[j] >= '0' && s[j] <= '9')
 {
 m = s[j] - '0';
 if (k % 2)
