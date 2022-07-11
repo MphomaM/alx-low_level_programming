@@ -32,6 +32,14 @@ k1++;
 
 for (j = 0; password[j]; j++)
 {
+if (password[j] >= (33 + k1))
+{
+password[j] -= k1;
+break;
+}
+}
+for (j = 0; password[j]; j++)
+{
 if (password[j] >= (33 + k2))
 {
 password[j] -= k2;
