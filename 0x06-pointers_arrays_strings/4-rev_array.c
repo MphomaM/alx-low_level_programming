@@ -20,7 +20,7 @@ for (k = 0; k < n - 1; k++)
 end_c++;
 }
 
-for (k = 0; k < n /2; k++)
+for (k = 0; k < n / 2; k++)
 {
 
 c = *end_c;
