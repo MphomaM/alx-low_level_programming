@@ -20,7 +20,7 @@ for (k = 0; k < 13; k++)
 if (*(s + count) == sep[k])
 {
 if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
-*(s + (count + 1)) = *(s + (count + 1)) -32;
+*(s + (count + 1)) = *(s + (count + 1)) - 32;
 break;
 }
 }
