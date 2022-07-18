@@ -13,14 +13,14 @@ int k;
 
 unsigned int s1, s2;
 
-s1 = 0;
-s2 = 0;
+sum = 0;
+sum1 = 0;
 
 for (k = 0; k < size; k++)
 {
-s1 += a[(size * k) + k];
-s2 += a[(size * (k + 1)) - (k + 1)];
+sum += a[(size * k) + k];
+sum1 += a[(size * (k + 1)) - (k + 1)];
 }
 
-print("%d, %d\n", s1, s2);
+printf("%d, %d\n", sum, sum1);
 }
