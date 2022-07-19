@@ -60,7 +60,7 @@ if (*s2 == '\0')
 return (1);
 if (*s1 == *s2)
 sum += wildcmp(s1 + 1, s2 + 1);
-sum += bandersnatch(s1 +1, s2);
+sum += bandersnatch(s1 + 1, s2);
 return (!!sum);
 }
 return (0);
