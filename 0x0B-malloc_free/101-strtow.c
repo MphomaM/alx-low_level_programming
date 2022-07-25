@@ -47,7 +47,7 @@ return (ptr);
  * @c: input char
  * Return: 1 if true or 0 or not
  */
-int is Space(char c)
+int isSpace(char c)
 {
 return (c == ' ');
 }
