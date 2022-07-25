@@ -92,7 +92,7 @@ int words = 0;
 while (*s)
 {
 if (isSpace(*s) && wordOn)
-wordsOn = 0;
+wordOn = 0;
 else if (!isSpace(*s) && !wordOn)
 {
 wordOn = 1;
