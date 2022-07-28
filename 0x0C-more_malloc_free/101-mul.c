@@ -137,7 +137,7 @@ if (tens)
 }
 
 /**
- * add_nums -Adds the numbers stored intwo strings.
+ * add_nums - Adds the numbers stored intwo strings.
  * @final_prod: The buffer storing the running final product.
  * @next_prod: The next product to be added.
  * @next_len: The length of next_prod.
