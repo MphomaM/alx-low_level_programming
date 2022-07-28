@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
@@ -20,7 +19,6 @@ k++;
 }
 return (1);
 }
-
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
@@ -37,7 +35,6 @@ k++;
 }
 return (k);
 }
-
 /**
  * errors - handles errors for main
  */
@@ -46,7 +43,6 @@ void errors(void)
 printf("Error\n");
 exit(98);
 }
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
