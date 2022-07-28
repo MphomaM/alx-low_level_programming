@@ -22,7 +22,7 @@ len2++;
 if (n < len2)
 p = malloc(sizeof(char) * (len1 + n + 1));
 else
-p = malloc(sizeof(char) * (len1 len2 + 1));
+p = malloc(sizeof(char) * (len1 + len2 + 1));
 
 if (!p)
 return (NULL);
@@ -41,5 +41,5 @@ p[k++] = s2[l++];
 
 p[k] = '\0';
 
-return (s);
+return (p);
 }
