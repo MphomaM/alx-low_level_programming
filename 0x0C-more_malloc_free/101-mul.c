@@ -1,99 +1,67 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 
 /**
- * is_digit - checks if a string contains a non-digit char
- * @s: string to be evaluated
- *
- * Return: 0 if a non-digit is found, 1 otherwise
+ *_isdigit - tells if the string consists of digits
+ * @argv: pointe to current item in argument
+ * Return: return 0 if all digits, 1 if not all digits.
  */
-int is_digit(char *s)
+int _isdigit(char *argv)
 {
-int k = 0;
+int k;
 
-while (s[k])
-{
-if (s[k] < '0' || s[k] > '9')
-return (0);
+k = 0;
+while (argv[k] >= '0' && argv[k] <= '9')
 k++;
-}
+else
 return (1);
 }
-
+return (0);
+}
 /**
- * _strlen - returns the length of a string
- * @s: string to evalute
- *
- * Return: the length of the string
+ * _atoi - converts a string of asccii digits to the values they represent
+ * @s: pointer to the source string
+ * Return: value of digits
  */
-int _strlen(char *s)
+int _atoi(char *s)
 {
-int k = 0;
+int k, result;
 
-while (s[k] != '\0')
+k = result = 0;
+while (s[k])
 {
+if (s[k] >= '0' && s[k] <= '9')
+{
+result *= 10;
+result += (s[k] - '0');
+}
 k++;
 }
-return (k);
+return (result);
 }
-
 /**
- * errors - handles errors for main
+ * main - main function call
+ * @argc: argument count
+ * @argv: 2D array of arguments
+ * Return: return 0 on success, 98 on failure
  */
-void errors(void)
+int main(int argc, char *argv[])
+{
+int k;
+
+malloc();
+if (argc != 3)
 {
 printf("Error\n");
 exit(98);
 }
-
-/**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: always 0 (Success)
- */
-int main(int argc, char *argv[])
+for (k = 1; k < argc; k++)
 {
-char *s1, *s2;
-int len1, len2, len, k, carry, digit1, digit2, *result, a = 0;
-
-s1 = argv[1], s2 = argv[2];
-if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-errors();
-len1 = _strlen(s1);
-len2 = _strlen(s2);
-len = len1 + len2 + 1;
-result = malloc(sizeof(int) * len);
-if (!result)
-return (1);
-for (k = 0; k <= len1 + len2; k++)
-result[k] = 0;
-for (len1 = len1 - 1; len1 >= 0; len1--)
+if (_isdigit(argv[k]))
 {
-digit1 = s1[len1] - '0';
-carry = 0;
-for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
-{
-digit2 = s2[len2] - '0';
-carry += result[len1 + len2 + 1] + (digit1 * digit2);
-result[len1 + len2 + 1] = carry % 10;
-carry /= 10;
+printf("Error\n");
+exit(98);
 }
-if (carry > 0)
-result[len1 + len2 + 1] += carry;
 }
-for (k = 0; k < len - 1; k++)
-{
-if (result[k])
-a = 1;
-if (a)
-_putchar(result[k] + '0');
-}
-if (!a)
-_putchar('0');
-_putchar('\n');
-free(result);
 return (0);
 }
