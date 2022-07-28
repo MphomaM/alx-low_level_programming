@@ -36,13 +36,13 @@ old_ptr = ptr;
 if (new_size < old_size)
 {
 for (k = 0; k < new_size; k++)
-ptr[k] = old_ptr[k];
+ptr1[k] = old_ptr[k];
 }
 
 if (new_size > old_size)
 {
 for (k = 0; k < old_size; k++)
-ptr[k] = old_ptr[k];
+ptr1[k] = old_ptr[k];
 }
 
 free(ptr);
