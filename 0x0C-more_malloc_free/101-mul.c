@@ -11,7 +11,9 @@ int _isdigit(char *argv)
 int k;
 
 k = 0;
-while (argv[k] >= '0' && argv[k] <= '9')
+while (argv[k])
+{
+if (argv[k] >= '0' && argv[k] <= '9')
 k++;
 else
 return (1);
