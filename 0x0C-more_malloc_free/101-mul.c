@@ -18,7 +18,7 @@ for (k = 1; k < argc; k++)
 for (l = 0; argv[k][l] != '\0'; l++)
 {
 if (argv[k][l] > 57 || argv[k][l] < 48)
-{ printf("Error\n");
+{  printf("Error\n");
 exit(98); }
 }
 
