@@ -43,7 +43,7 @@ len++;
 
 for (k = 0; k < len; k++)
 {
-dest[k] src[k];
+dest[k] = src[k];
 }
 dest[k] = '\0';
 
