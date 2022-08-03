@@ -1,4 +1,3 @@
-
 #include "3-calc.h"
 
 /**
@@ -41,7 +40,7 @@ return (a * b);
  * op_div - calculates the division of two integers
  * @a: first integer
  * @b: second integer
- * 
+ *
  * Return: result of the division of a and b
  */
 int op_div(int a, int b)
