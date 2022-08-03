@@ -31,7 +31,7 @@ arr = (char *)main;
 
 for (k = 0; k < bytes; k++)
 {
-if (k == bytes = 1)
+if (k == bytes - 1)
 {
 printf("%02hhx\n", arr[k]);
 break;
