@@ -7,7 +7,7 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int k
+unsigned int k;
 va_list list;
 
 va_start(list, n);
