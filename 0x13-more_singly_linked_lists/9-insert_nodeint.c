@@ -34,6 +34,9 @@ new->next = temp->next;
 temp->next = new;
 return (new);
 }
+else
+temp =->next;
+}
 
 return (NULL);
 }
